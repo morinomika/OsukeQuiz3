@@ -21,6 +21,14 @@
 		ADC2F16E23E5868D005E376E /* e.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ADC2F16723E5868D005E376E /* e.jpg */; };
 		ADC2F16F23E5868D005E376E /* d.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ADC2F16823E5868D005E376E /* d.jpg */; };
 		ADC2F17023E5868D005E376E /* b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ADC2F16923E5868D005E376E /* b.jpg */; };
+		ADC2F17223EEB9EA005E376E /* quizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC2F17123EEB9EA005E376E /* quizViewController.swift */; };
+		ADC2F17423EEBA0A005E376E /* resultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC2F17323EEBA0A005E376E /* resultViewController.swift */; };
+		ADC2F17E23F7F265005E376E /* quiz2.png in Resources */ = {isa = PBXBuildFile; fileRef = ADC2F17723F7F264005E376E /* quiz2.png */; };
+		ADC2F18023F7F265005E376E /* quiz1.png in Resources */ = {isa = PBXBuildFile; fileRef = ADC2F17923F7F265005E376E /* quiz1.png */; };
+		ADC2F18123F7F265005E376E /* quiz3.png in Resources */ = {isa = PBXBuildFile; fileRef = ADC2F17A23F7F265005E376E /* quiz3.png */; };
+		ADC2F18223F7F265005E376E /* quiz7.png in Resources */ = {isa = PBXBuildFile; fileRef = ADC2F17B23F7F265005E376E /* quiz7.png */; };
+		ADC2F18523F7F3D5005E376E /* quiz8.png in Resources */ = {isa = PBXBuildFile; fileRef = ADC2F18323F7F3D5005E376E /* quiz8.png */; };
+		ADC2F18623F7F3D5005E376E /* quiz9.png in Resources */ = {isa = PBXBuildFile; fileRef = ADC2F18423F7F3D5005E376E /* quiz9.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +69,14 @@
 		ADC2F16723E5868D005E376E /* e.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = e.jpg; sourceTree = "<group>"; };
 		ADC2F16823E5868D005E376E /* d.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = d.jpg; sourceTree = "<group>"; };
 		ADC2F16923E5868D005E376E /* b.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = b.jpg; sourceTree = "<group>"; };
+		ADC2F17123EEB9EA005E376E /* quizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quizViewController.swift; sourceTree = "<group>"; };
+		ADC2F17323EEBA0A005E376E /* resultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resultViewController.swift; sourceTree = "<group>"; };
+		ADC2F17723F7F264005E376E /* quiz2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = quiz2.png; sourceTree = "<group>"; };
+		ADC2F17923F7F265005E376E /* quiz1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = quiz1.png; sourceTree = "<group>"; };
+		ADC2F17A23F7F265005E376E /* quiz3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = quiz3.png; sourceTree = "<group>"; };
+		ADC2F17B23F7F265005E376E /* quiz7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = quiz7.png; sourceTree = "<group>"; };
+		ADC2F18323F7F3D5005E376E /* quiz8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = quiz8.png; sourceTree = "<group>"; };
+		ADC2F18423F7F3D5005E376E /* quiz9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = quiz9.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +131,15 @@
 				ADC2F12123C9D482005E376E /* ViewController.swift */,
 				ADC2F12323C9D482005E376E /* Main.storyboard */,
 				ADC2F12623C9D484005E376E /* Assets.xcassets */,
+				ADC2F17923F7F265005E376E /* quiz1.png */,
+				ADC2F17723F7F264005E376E /* quiz2.png */,
+				ADC2F17A23F7F265005E376E /* quiz3.png */,
+				ADC2F17B23F7F265005E376E /* quiz7.png */,
+				ADC2F18323F7F3D5005E376E /* quiz8.png */,
+				ADC2F18423F7F3D5005E376E /* quiz9.png */,
+				ADC2F17123EEB9EA005E376E /* quizViewController.swift */,
 				ADC2F16623E5868D005E376E /* a.jpg */,
+				ADC2F17323EEBA0A005E376E /* resultViewController.swift */,
 				ADC2F16923E5868D005E376E /* b.jpg */,
 				ADC2F16323E5868D005E376E /* c.jpg */,
 				ADC2F16823E5868D005E376E /* d.jpg */,
@@ -252,12 +276,18 @@
 			files = (
 				ADC2F16C23E5868D005E376E /* f.jpg in Resources */,
 				ADC2F16E23E5868D005E376E /* e.jpg in Resources */,
+				ADC2F18023F7F265005E376E /* quiz1.png in Resources */,
 				ADC2F12A23C9D484005E376E /* LaunchScreen.storyboard in Resources */,
 				ADC2F16B23E5868D005E376E /* g.jpg in Resources */,
+				ADC2F18523F7F3D5005E376E /* quiz8.png in Resources */,
+				ADC2F18223F7F265005E376E /* quiz7.png in Resources */,
 				ADC2F16D23E5868D005E376E /* a.jpg in Resources */,
 				ADC2F12723C9D484005E376E /* Assets.xcassets in Resources */,
 				ADC2F17023E5868D005E376E /* b.jpg in Resources */,
+				ADC2F18123F7F265005E376E /* quiz3.png in Resources */,
+				ADC2F18623F7F3D5005E376E /* quiz9.png in Resources */,
 				ADC2F16F23E5868D005E376E /* d.jpg in Resources */,
+				ADC2F17E23F7F265005E376E /* quiz2.png in Resources */,
 				ADC2F12523C9D482005E376E /* Main.storyboard in Resources */,
 				ADC2F16A23E5868D005E376E /* c.jpg in Resources */,
 			);
@@ -286,6 +316,8 @@
 			files = (
 				ADC2F12223C9D482005E376E /* ViewController.swift in Sources */,
 				ADC2F12023C9D482005E376E /* AppDelegate.swift in Sources */,
+				ADC2F17223EEB9EA005E376E /* quizViewController.swift in Sources */,
+				ADC2F17423EEBA0A005E376E /* resultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
