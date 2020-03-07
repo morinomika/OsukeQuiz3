@@ -9,8 +9,11 @@
 import UIKit
 
 class quizViewController: UIViewController {
-//問題文を格納する配列
+    //問題の答え，正解を格納する配列
     var quizArray = [Any]()
+    
+    //①問題文の画像を格納する配列
+
     //正解数
     var correctAnswer: Int = 0
    //クイズを表示するTextview
@@ -21,46 +24,56 @@ class quizViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    
-    //一時的にクイズを格納しておく配列
-    var tmpArray = [Any]()
-    //tmpArrayに問題文、３つの選択肢、答えの番号が入った配列を追加していく
-    tmpArray.append(["quiz8.png","36","４","8",3])
-    tmpArray.append(["quiz2.png","いご","けいご","いたご",1])
-    tmpArray.append(["quiz1.png","この謎の答えは名前","この謎の答えは孤児","この謎の答えは魔女",3])
-    //問題をシャッフルしてquizArrayに格納する
-    
-    while (tmpArray.count > 0) {
+
+        //一時的にクイズを格納しておく配列
+        var tmpArray = [Any]()
+        
+        //②一時的に問題の画像を格納しておく配列
+        
+        //tmpArrayに３つの選択肢、答えの番号が入った配列を追加していく
+        tmpArray.append(["36","４","8",3])
+        tmpArray.append(["いご","けいご","いたご",1])
+        tmpArray.append(["この謎の答えは名前","この謎の答えは孤児","この謎の答えは魔女",3])
+        
+        //③tmpImageArrayに問題の画像を追加する
+
+        //問題をシャッフル
+        while (tmpArray.count > 0) {
             let index = Int(arc4random()) % tmpArray.count
             quizArray.append(tmpArray[index])
-            tmpArray.remove(at: index)
-    }
-        choiceQuiz()
+            //④imageArrayにシャッフルされた画像を格納
 
-    }
+            tmpArray.remove(at: index)
+            //⑤表示した問題は削除する
+            
+        }
+            choiceQuiz()
+
+        }
 
 
 func choiceQuiz() {
     //一時的にクイズを取り出す配列
-    let tmpArray = quizArray[0] as! UIImage
-    //問題文のテキスト表示
-    quizImageView.image = tmpArray[0].g
-    //選択肢のボタンにそれぞれ選択肢のテキストをせっと
-    choiceButton1.setTitle(tmpArray[1] as? String, for: .normal)
-    choiceButton2.setTitle(tmpArray[2] as? String, for: .normal)
-    choiceButton3.setTitle(tmpArray[3] as? String, for: .normal)
+    let tmpArray = quizArray[0] as! [Any]
+    //⑥問題文のテキスト表示
+    
+    //選択肢のボタンにそれぞれ選択肢のテキストをセット
+    choiceButton1.setTitle(tmpArray[0] as? String, for: .normal)
+    choiceButton2.setTitle(tmpArray[1] as? String, for: .normal)
+    choiceButton3.setTitle(tmpArray[2] as? String, for: .normal)
 }
 
     
     @IBAction func choiceAnswer(sender: UIButton) {
         let tmpArray = quizArray[0] as! [Any]
-        if tmpArray[4] as! Int == sender.tag {
+        if tmpArray[3] as! Int == sender.tag {
             //正解数を増やす
             correctAnswer = correctAnswer + 1
             }
         //解いた問題をquizArrayから取り除く
         quizArray.remove(at: 0)
+        //⑦解いた問題をimageArrayから取り除く
+
         //解いた問題数の合計があらかじめ設定していた問題数に達成したら結果画面へ
         if quizArray.count == 0 {
             performSegueToResult()
