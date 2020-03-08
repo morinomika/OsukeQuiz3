@@ -13,6 +13,7 @@ class quizViewController: UIViewController {
     var quizArray = [Any]()
     
     //①問題文の画像を格納する配列
+    var imageArray = [UIImage]()
 
     //正解数
     var correctAnswer: Int = 0
@@ -29,7 +30,8 @@ class quizViewController: UIViewController {
         var tmpArray = [Any]()
         
         //②一時的に問題の画像を格納しておく配列
-        
+        var tmpImageArray = [UIImage]()
+
         //tmpArrayに３つの選択肢、答えの番号が入った配列を追加していく
         tmpArray.append(["36","４","8",3])
         tmpArray.append(["いご","けいご","いたご",1])
